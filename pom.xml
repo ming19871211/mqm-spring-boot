@@ -9,13 +9,7 @@
   <url>http://maven.apache.org</url>
   <parent>
     <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-parent</artifactId>
-    <exclusions>
-      <exclusion>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-tomcat</artifactId>
-      </exclusion>
-    </exclusions>
+    <artifactId>spring-boot-starter-parent</artifactId>    
     <version>1.4.3.RELEASE</version>
   </parent>
   <dependencies>
@@ -26,6 +20,12 @@
   	<dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-web</artifactId>
+        <exclusions>
+	      	<exclusion>
+	        <groupId>org.springframework.boot</groupId>
+	        <artifactId>spring-boot-starter-tomcat</artifactId>
+	      	</exclusion>
+    	</exclusions>
     </dependency>
     <dependency>
       <groupId>junit</groupId>
