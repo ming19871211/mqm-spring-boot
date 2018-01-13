@@ -26,7 +26,8 @@ node {
             junit '**/target/*.xml'
         }
         failure {
-            mail to: ming19871211@163.com, subject: 'The Pipeline failed :('
+        	echo '±‡“Î ß∞‹'
+            //mail to: ming19871211@163.com, subject: 'The Pipeline failed :('
         }
     }
 }
