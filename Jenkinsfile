@@ -5,11 +5,11 @@ node {
     //sh "${mvnHome}/bin/mvn -B verify"
     def serverPath = '/app/springboot/jenkins-jar'
     stage('Test') {
-        echo '²âÊÔÔ´Âë°ü'
+        echo 'æµ‹è¯•æºç åŒ…'
         sh "mvn -B verify"
     }
     stage('Build') {
-    	echo  'maven´ò°ü'
+    	echo  'mavenæ‰“åŒ…'
         sh 'mvn clean package -Dmaven.test.skip=true'
     }    
     stage('upload') {
@@ -26,7 +26,7 @@ node {
             junit '**/target/*.xml'
         }
         failure {
-        	echo '±àÒëÊ§°Ü'
+        	echo 'ç¼–è¯‘å¤±è´¥'
             //mail to: ming19871211@163.com, subject: 'The Pipeline failed :('
         }
     }
