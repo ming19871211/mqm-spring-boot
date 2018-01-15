@@ -4,6 +4,10 @@ node {
     //def mvnHome = tool 'apache-maven-3.5.0' 
     //sh "${mvnHome}/bin/mvn -B verify"
     def serverPath = '/app/springboot/jenkins-jar'
+    stage('download') {
+    	echo '下载源码'
+    	git credentialsId: 'ebbfc189-551d-45b3-97d7-24ac5af6da89'
+    }
     stage('Test') {
         echo '测试源码包'
         sh "mvn -B verify"
