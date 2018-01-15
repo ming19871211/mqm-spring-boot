@@ -6,7 +6,7 @@ node {
     def serverPath = '/app/springboot/jenkins-jar'
     stage('download') {
     	echo '下载源码'
-    	git credentialsId: 'ebbfc189-551d-45b3-97d7-24ac5af6da89'
+    	git credentialsId: 'ebbfc189-551d-45b3-97d7-24ac5af6da89', url: 'https://github.com/ming19871211/mqm-spring-boot.git'
     }
     stage('Test') {
         echo '测试源码包'
