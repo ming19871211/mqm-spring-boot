@@ -18,6 +18,7 @@ node {
     }    
     stage('upload') {
     	echo 'upload'
+    	echo 'mv ${env.WORKSPACE}/target/*.jar ${serverPath}'
     	sh 'mv ${env.WORKSPACE}/target/*.jar ${serverPath}'
     }
     stage('Deploy') {
