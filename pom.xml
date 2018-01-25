@@ -3,7 +3,8 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>mqm</groupId>
   <artifactId>mqm-spring-boot</artifactId>
-  <packaging>war</packaging>
+  <!-- <packaging>war</packaging> -->
+  <packaging>jar</packaging>
   <version>1.0.1-SNAPSHOT</version>
   <name>mqm-spring-boot Maven Webapp</name>
   <url>http://maven.apache.org</url>
