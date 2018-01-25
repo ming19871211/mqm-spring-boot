@@ -3,7 +3,7 @@ pipeline {
         docker {
             image 'maven:3-alpine'
             label 'docker-server'  //有docker服务的节点
-            args '-v /data/maven-repo:/data/maven-repo:rw,z -v /app/maven/apache-maven-3.5.0/conf/settings.xml:/usr/share/maven/conf/settings.xml'
+            args '-v /data/maven-repo:/data/maven-repo:rw -v /app/maven/apache-maven-3.5.0/conf/settings.xml:/usr/share/maven/conf/settings.xml'
         }
     }
     stages{
