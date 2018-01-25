@@ -7,10 +7,6 @@ pipeline {
         }
     }
     stages{
-	    /*stage('download') {//下载项目
-	    	echo 'download ...'
-	    	git credentialsId: 'ebbfc189-551d-45b3-97d7-24ac5af6da89', url: 'https://github.com/ming19871211/mqm-spring-boot.git'
-	    }*/
 	    stage('Build') { //编译
 	    	steps{
 		    	echo 'build...'
